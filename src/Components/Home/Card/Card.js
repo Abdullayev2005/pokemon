@@ -42,7 +42,7 @@ const Card = ({pokemon}) => {
 
 
              </div>
-
+            </div>
          </div>
     );
 };
