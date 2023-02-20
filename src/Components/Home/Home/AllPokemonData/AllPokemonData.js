@@ -22,8 +22,8 @@ const AllPokemonData = () => {
   //   // search for the rPokemon name
   const searchpokemon = async () => {
     setseLoading(true);
-    // setError(false);
-    // try{
+    setError(false);
+    try{
     const res = await axios.get(`https://pokeapi.co/api/v2/pokemon/${search}`);
     console.log(res);
     setpokemon({
