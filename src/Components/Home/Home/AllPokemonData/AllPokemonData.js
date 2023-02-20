@@ -31,13 +31,13 @@ const AllPokemonData = () => {
       type: res.data.types[0].type.name
     });
     setseLoading(false);
-    // }
-    // catch(error){
-    //   console.log(error);
-    //   setseLoading(false);
+    }
+    catch(error){
+    console.log(error);
+    setseLoading(false);
 
 
-    // }
+    }
 
   };
 
@@ -78,7 +78,7 @@ const AllPokemonData = () => {
 
         {!seLoading && pokemon ? (
 
-          <Card pokemon={pokemon}></Card>) : <Error />}
+          <Card pokemon={pokemon}> </Card>) : <Error />}
 
       </div>
     </>
